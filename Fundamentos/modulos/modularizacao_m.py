@@ -1,0 +1,1 @@
+print('Este modo se chama', __name__)
