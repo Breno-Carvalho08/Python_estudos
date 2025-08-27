@@ -22,4 +22,5 @@ grupos = groupby(alunos_agrupados, key=ordena)
 
 for chave, grupo in grupos:
     print(chave)
-    print(list(grupo))
+    for aluno in grupo:
+        print(aluno)

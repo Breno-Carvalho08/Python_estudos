@@ -1,8 +1,10 @@
 #Generator expression, Iterables e Iterators em Python
     # iterable = ['Eu', 'Tenho', '__iter__']
     # iterator = iter(iterable)
+
     # lista = [numero for numero in range(10)] 
     # print(lista) #List comprehension - Acessar os indices
+
     # generator = (numero for numero in range(10))
     # print(generator) #Generator - Não tem indice nem tamanho
 
