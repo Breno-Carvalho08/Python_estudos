@@ -20,6 +20,8 @@ for numero in range(10):
 # lista = [numero // 2 for numero in range(10)]
 # print(lista)
 from functools import partial
+
+
 #Mapeamento de dados em list comprehension - Transforma (talvez) os dados, mas mantém o mesmo tamanho da lista
 produtos = [
     {'nome': 'p1', 'preco': 20},
