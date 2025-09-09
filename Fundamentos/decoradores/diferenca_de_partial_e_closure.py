@@ -19,9 +19,10 @@ def decorador(func):
         return resultado
     return wrapper
 
+entrada = int(input('Numero:'))
 decoradora = decorador(multipicador)
-multiplicar_por_cinco = decoradora(5,5)
-multiplicar_por_dez = decoradora(10,8)
+multiplicar_por_cinco = decoradora(entrada,5)
+multiplicar_por_dez = decoradora(entrada,8)
 print('CLOSURE')
 print(multiplicar_por_cinco)
 print(multiplicar_por_dez)

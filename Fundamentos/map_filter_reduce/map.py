@@ -4,7 +4,7 @@ produtos = [
     {'nome': 'Banana', 'preco': 1},
     {'nome': 'Maçã', 'preco': 1.50},
     {'nome': 'Abacaxi', 'preco': 2}
-    ]
+]
 
 def aumento_porcentagem(valor, porcentagem):
     return round(valor * porcentagem, 2)

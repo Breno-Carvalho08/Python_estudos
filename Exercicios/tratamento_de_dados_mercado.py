@@ -1,4 +1,5 @@
 from itertools import groupby
+from functools import reduce
 
 produtos = [
     {"codigo": 101, "nome": "Arroz 5kg", "preco": 24.90, "quantidade_vendida": 120, "categoria": "Alimentos"},
@@ -23,6 +24,13 @@ produtos = [
     {"codigo": 503, "nome": "Batata chips 100g", "preco": 7.80, "quantidade_vendida": 140, "categoria": "Snacks"},
     {"codigo": 504, "nome": "Amendoim torrado 200g", "preco": 8.40, "quantidade_vendida": 90, "categoria": "Snacks"},
 ]
+def calculo_total_vendas_reduce(acumulador, lista):
+    valor_acumulado = acumulador + (lista['preco'] * lista['quantidade_vendida'])
+    return valor_acumulado 
+
+total = reduce(calculo_total_vendas_reduce, produtos, 0)
+total = reduce(lambda ac, p: ac + (p['preco'] * p['quantidade_vendida']), produtos, 0)
+print(total)
 
 def calculo_total_vendas(lista):
     total_vendas = 0
